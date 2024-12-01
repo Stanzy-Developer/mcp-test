@@ -24,6 +24,7 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 0 1rem;
+            padding-bottom: 100px;
         }
         
         section {
@@ -31,6 +32,7 @@
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
         }
         
         footer {
@@ -42,6 +44,28 @@
             bottom: 0;
             width: 100%;
         }
+
+        .news-item {
+            border-bottom: 1px solid #eee;
+            padding: 1rem 0;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .service-item {
+            background-color: #f8f8f8;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +75,53 @@
     <main>
         <section>
             <h2>About Us</h2>
-            <p>This is a simple test page to demonstrate GitHub workflows.</p>
+            <p>This is a simple test page to demonstrate GitHub workflows and showcase our services and information.</p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>Custom websites and web applications built with the latest technologies.</p>
+            </div>
+            <div class="service-item">
+                <h3>Digital Marketing</h3>
+                <p>Comprehensive digital marketing solutions to grow your online presence.</p>
+            </div>
+            <div class="service-item">
+                <h3>Consulting</h3>
+                <p>Expert advice on technology implementation and digital transformation.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Latest Updates</h2>
+            <div class="news-item">
+                <h3>New Website Launch</h3>
+                <p>We're excited to announce the launch of our new website!</p>
+            </div>
+            <div class="news-item">
+                <h3>Expanded Services</h3>
+                <p>Check out our new range of digital marketing services.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div>
+                    <h3>Address</h3>
+                    <p>123 Business Street<br>Tech City, TC 12345</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p>contact@mcptest.com</p>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>(555) 123-4567</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
